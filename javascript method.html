@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The slice() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="demo"></p>
+
+<script>
+    let y=128;
+    let x = 9.57;
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let str = "Apple, Banana, Kiwi";
+document.getElementById("demo").innerHTML ="<h3>print string index 7 to 13 = </h3>" + str.slice(7,13) + "<h3>print string length = </h3>"
+  + str.length + "<h3>print string index 5 to 9 = </h3>"
+  + "<br>" + str.slice(5,9) + "<h3>print string index -7 = </h3>"
+  + "<br>" + str.slice(-7) + "<h3>print string index 4 to 10 = </h3>"
+   + "<br>" + str.substring(4,10) + "<h3>print string  start index 5  and length 9 = </h3>"
+   + "<br>" + str.substr(5,9) + "<h3>print string lowercase = </h3>"
+   + "<br>" + str.toLowerCase() + "<h3>print string both side get space  = </h3>"
+   + "<br>" + str.trim() + "<h3>print string with * = </h3>"
+   + "<br>" + str.split("*") + "<h3>print number as string= </h3>"
+   + "<br>" + y.toString() + "<h3>print number fixed value = </h3>"
+   + "<br>" + x.toFixed() + "<h3>print 4 digits after  decima point = </h3>"
+   + "<br>" + x.toFixed(4) + "<h3>print number with 2 digits = </h3>"
+   + "<br>" + x.toPrecision(2) + "<h3>print string as number = </h3>"
+   + "<br>" + Number("10") + "<h3>print string as number = </h3>"
+   + "<br>" + Number("true") + "<h3>print string as number = </h3>"
+   + "<br>" + parseInt("10,33") + "<h3>print string as number = </h3>"
+   + "<br>" + parseInt("10.33") + "<h3>print string as number with first value = </h3>" 
+   + "<br>" + parseFloat("12 44 66") + "<h3> join , = </h3>"
+   + "<br>" + fruits.join(",") + "<h3>last value deleted = </h3>"
+   + "<br>" + fruits.pop()+ "<h3>end of the array value added = </h3>"
+   + "<br>" + fruits.push("papaya") + "<h3> array first value deleted = </h3>"
+   + "<br>" + fruits.shift()+ "<h3>in the array first position value added = </h3>"
+   + "<br>" + fruits.unshift("Mango2") + "<h3>index of 0 value deleted = </h3>"
+   + "<br>" + fruits.splice(0,1);
+</script>
+
+</body>
+</html>
+
